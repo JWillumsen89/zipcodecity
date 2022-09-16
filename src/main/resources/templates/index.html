@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Input site</title>
+    <link rel="stylesheet" th:href="@{style.css}" href="../static/style.css">
+</head>
+<body>
+<div>
+    <form method="post" action="createresult">
+        <label for="zipcode">Zipcode number: </label>
+        <input id="zipcode" name="zipcode" type="number" placeholder="TYPE ZIPCODE" autofocus required>
+        <button class="button" type="submit">Find city name</button>
+        <button class="button" type="reset" >Clear Form</button>
+    </form>
+</div>
+</body>
+</html>
